@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Advent of Code
+# Actual puzzle inputs must not be shared publicly per AoC rules
+data/day*.txt
+!data/.gitkeep
