@@ -11,7 +11,6 @@ import itertools
 def parse(input_text: str):
     return input_text.strip().splitlines()
 
-
 def part1(data) -> int:
     result = 0
     for bank in data:   
