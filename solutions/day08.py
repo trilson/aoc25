@@ -30,7 +30,8 @@ def part1(data) -> int:
     return math.prod([len(x) for x in sorted(nx.connected_components(G), key = lambda x: -len(x))[0:3]])
 
 def euclidean(pair):
-    return sqrt((pair[0][0] - pair[1][0])**2 + (pair[0][1] - pair[1][1])**2 + (pair[0][2] - pair[1][2])**2)
+    return math.dist(*pair)
+    # return sqrt((pair[0][0] - pair[1][0])**2 + (pair[0][1] - pair[1][1])**2 + (pair[0][2] - pair[1][2])**2)
 
 def part2(data) -> int:
     locations = [tuple(map(int, x.split(','))) for x in data]

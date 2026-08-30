@@ -4,7 +4,10 @@ version = "0.1.0"
 description = "Advent of Code 2025 solutions"
 requires-python = ">=3.11"
 dependencies = [
+    "black>=26.5.1",
     "networkx>=3.6.1",
+    "shapely>=2.1.2",
+    "z3-solver>=4.13.0",
 ]
 
 [tool.uv]
